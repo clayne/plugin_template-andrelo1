@@ -4,7 +4,7 @@ project(MyPlugin VERSION 1.0.0.0)
 
 find_package(CommonLibSSE REQUIRED)
 
-configure_file(cmake/version.h.in version.h)
+configure_file(cmake/plugin.h.in plugin.h)
 configure_file(cmake/version.rc.in version.rc)
 
 add_library("${PROJECT_NAME}" SHARED)
@@ -13,7 +13,7 @@ target_sources("${PROJECT_NAME}"
 	PRIVATE
 	src/main.cpp
 	src/pch.h
-	"${PROJECT_BINARY_DIR}/version.h"
+	"${PROJECT_BINARY_DIR}/plugin.h"
 	"${PROJECT_BINARY_DIR}/version.rc"
 )
 
