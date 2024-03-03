@@ -1,7 +1,7 @@
 # plugin_template
 ## Dependencies
 - [CommonLibSSE](https://github.com/Ryan-rsm-McKenzie/CommonLibSSE)
-## Build dependencies
+## Build prerequisites
 - Visual Studio 2022
   - Desktop development with C++
 - [vcpkg](https://github.com/microsoft/vcpkg)
